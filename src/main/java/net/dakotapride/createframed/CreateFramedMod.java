@@ -7,7 +7,6 @@ import net.dakotapride.createframed.registry.CreateFramedEntityTypes;
 import net.dakotapride.createframed.registry.CreateFramedTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "#createframed:createframed/red/glass",
-    "#createframed:createframed/orange/glass",
-    "#createframed:createframed/yellow/glass",
-    "#createframed:createframed/green/glass",
-    "#createframed:createframed/lime/glass",
-    "#createframed:createframed/blue/glass",
+    "#createframed:red/glass",
+    "#createframed:orange/glass",
+    "#createframed:yellow/glass",
+    "#createframed:green/glass",
+    "#createframed:lime/glass",
+    "#createframed:blue/glass",
     "#createframed:createframed/light_blue/glass",
     "#createframed:createframed/cyan/glass",
     "#createframed:createframed/purple/glass",

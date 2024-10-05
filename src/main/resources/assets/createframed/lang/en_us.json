@@ -1,6 +1,21 @@
 {
   "itemGroup.createframed.create_framed": "Create: Framed",
 
+  "block.createframed.copper_window": "Copper Window",
+  "block.createframed.copper_window_pane": "Copper Window Pane",
+  "block.createframed.zinc_window": "Zinc Window",
+  "block.createframed.zinc_window_pane": "Zinc Window Pane",
+  "block.createframed.brass_window": "Brass Window",
+  "block.createframed.brass_window_pane": "Brass Window Pane",
+  "block.createframed.rose_quartz_window": "Rose Quartz Window",
+  "block.createframed.rose_quartz_window_pane": "Rose Quartz Window Pane",
+  "block.createframed.andesite_alloy_window": "Andesite Alloy Window",
+  "block.createframed.andesite_alloy_window_pane": "Andesite Alloy Window Pane",
+  "block.createframed.industrial_iron_window": "Industrial Iron Window",
+  "block.createframed.industrial_iron_window_pane": "Industrial Iron Window Pane",
+  "block.createframed.emerald_window": "Emerald Window",
+  "block.createframed.emerald_window_pane": "Emerald Window Pane",
+
   "block.createframed.red_stained_framed_glass": "Red Stained Framed Glass",
   "block.createframed.orange_stained_framed_glass": "Orange Stained Framed Glass",
   "block.createframed.yellow_stained_framed_glass": "Yellow Stained Framed Glass",
@@ -179,5 +194,24 @@
   "block.createframed.light_gray_stained_framed_glass_trapdoor": "Light Gray Stained Framed Trapdoor",
   "block.createframed.white_stained_framed_glass_trapdoor": "White Stained Framed Trapdoor",
   "block.createframed.brown_stained_framed_glass_trapdoor": "Brown Stained Framed Trapdoor",
-  "block.createframed.tinted_framed_glass_trapdoor": "Tinted Framed Trapdoor"
+  "block.createframed.tinted_framed_glass_trapdoor": "Tinted Framed Trapdoor",
+
+  // Alex's Caves
+  "block.createframed.framed_radon_lamp_red": "Framed Red Radon Lamp",
+  "block.createframed.framed_radon_lamp_orange": "Framed Orange Radon Lamp",
+  "block.createframed.framed_radon_lamp_yellow": "Framed Yellow Radon Lamp",
+  "block.createframed.framed_radon_lamp_green": "Framed Green Radon Lamp",
+  "block.createframed.framed_radon_lamp_lime": "Framed Lime Radon Lamp",
+  "block.createframed.framed_radon_lamp_blue": "Framed Blue Radon Lamp",
+  "block.createframed.framed_radon_lamp_light_blue": "Framed Light Blue Radon Lamp",
+  "block.createframed.framed_radon_lamp_cyan": "Framed Cyan Radon Lamp",
+  "block.createframed.framed_radon_lamp_purple": "Framed Purple Radon Lamp",
+  "block.createframed.framed_radon_lamp_magenta": "Framed Magenta Radon Lamp",
+  "block.createframed.framed_radon_lamp_pink": "Framed Pink Radon Lamp",
+  "block.createframed.framed_radon_lamp_black": "Framed Black Radon Lamp",
+  "block.createframed.framed_radon_lamp_gray": "Framed Gray Radon Lamp",
+  "block.createframed.framed_radon_lamp_light_gray": "Framed Light Gray Radon Lamp",
+  "block.createframed.framed_radon_lamp_white": "Framed White Radon Lamp",
+  "block.createframed.framed_radon_lamp_brown": "Framed Brown Radon Lamp",
+  "text.createframed.mod_missing.alexs_caves": "Missing mod: Alex's Caves"
 }
