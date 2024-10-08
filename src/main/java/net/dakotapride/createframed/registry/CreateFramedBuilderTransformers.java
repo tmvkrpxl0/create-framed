@@ -1,7 +1,6 @@
 package net.dakotapride.createframed.registry;
 
 import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllCreativeModeTabs;
 import com.simibubi.create.content.decoration.TrainTrapdoorBlock;
 import com.simibubi.create.content.decoration.palettes.ConnectedGlassBlock;
 import com.simibubi.create.content.decoration.palettes.ConnectedGlassPaneBlock;
@@ -47,10 +46,10 @@ public class CreateFramedBuilderTransformers {
 
     public static BlockEntry<WindowBlock> windowBlock(String name,
                                                       Supplier<ConnectedTextureBehaviour> behaviour,
-                                                      Block block, Supplier<RenderType> renderType) {
+                                                      Block block) {
         return REGISTRATE.block(name + "_window", p -> new WindowBlock(p, false))
                 .onRegister(connectedTextures(behaviour))
-                .addLayer(() -> renderType)
+                .addLayer(() -> RenderType::cutout)
                 .initialProperties(() -> Blocks.GLASS)
                 .properties((p) -> p.isValidSpawn(CreateFramedBuilderTransformers::never)
                         .isRedstoneConductor(CreateFramedBuilderTransformers::never)
@@ -63,11 +62,40 @@ public class CreateFramedBuilderTransformers {
     }
 
     public static BlockEntry<ConnectedGlassPaneBlock> windowPaneBlock(String name,
-                                                                      Supplier<CTSpriteShiftEntry> ct, Supplier<RenderType> renderType,
+                                                                      Supplier<CTSpriteShiftEntry> ct,
                                                                       Supplier<MapColor> color) {
         return REGISTRATE.block(name + "_window_pane", ConnectedGlassPaneBlock::new)
                 .onRegister(connectedTextures(() -> new HorizontalCTBehaviour(ct.get())))
-                .addLayer(() -> renderType)
+                .addLayer(() -> RenderType::cutout)
+                .initialProperties(() -> Blocks.GLASS_PANE)
+                .properties(p -> p.mapColor(color.get()).noOcclusion())
+                .simpleItem()
+                .register();
+    }
+
+    public static BlockEntry<WindowBlock> roseQuartzWindowBlock(String name,
+                                                      Supplier<ConnectedTextureBehaviour> behaviour,
+                                                      Block block) {
+        return REGISTRATE.block(name + "_window", p -> new WindowBlock(p, false))
+                .onRegister(connectedTextures(behaviour))
+                .addLayer(() -> RenderType::translucent)
+                .initialProperties(() -> Blocks.GLASS)
+                .properties((p) -> p.isValidSpawn(CreateFramedBuilderTransformers::never)
+                        .isRedstoneConductor(CreateFramedBuilderTransformers::never)
+                        .isSuffocating(CreateFramedBuilderTransformers::never)
+                        .isViewBlocking(CreateFramedBuilderTransformers::never)
+                        .noOcclusion()
+                        .mapColor(block.defaultMapColor()))
+                .simpleItem()
+                .register();
+    }
+
+    public static BlockEntry<ConnectedGlassPaneBlock> roseQuartzWindowPaneBlock(String name,
+                                                                      Supplier<CTSpriteShiftEntry> ct,
+                                                                      Supplier<MapColor> color) {
+        return REGISTRATE.block(name + "_window_pane", ConnectedGlassPaneBlock::new)
+                .onRegister(connectedTextures(() -> new HorizontalCTBehaviour(ct.get())))
+                .addLayer(() -> RenderType::translucent)
                 .initialProperties(() -> Blocks.GLASS_PANE)
                 .properties(p -> p.mapColor(color.get()).noOcclusion())
                 .simpleItem()
