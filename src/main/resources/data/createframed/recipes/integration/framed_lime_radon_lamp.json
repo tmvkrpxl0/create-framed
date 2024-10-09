@@ -8,7 +8,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "alexscaves:radon_lamp_lime"
+    "item": "alexscaves:radon_lamp_lime"
   },
   "result": "createframed:framed_radon_lamp_lime"
 }
